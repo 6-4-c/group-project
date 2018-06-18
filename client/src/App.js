@@ -1,21 +1,28 @@
 import React, { Component } from 'react';
-//import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from './components/home';
+import Login from './components/login';
+import Register from './components/register';
+import Navbar from './components/customNavBar';
+// import CreateEvent from './components/createevent';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        {/* <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header> */}
-        <h1 className="App-intro">
-          Here is where the front-end of our app will live
-        </h1>
-      </div>
+<Router>
+  <div>
+    <Navbar />
+    <Route exact path="/" component={Home} />
+    <Route path="/login" component={Login} />
+    <Route path="/register" component={Register} />
+    {/* <Route path="/createevent" component={CreateEvent} /> */}
+
+    </div>
+</Router>
     );
   }
 }
 
 export default App;
+
