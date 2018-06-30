@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const app = express();
+// const app = express();
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 
@@ -38,8 +38,8 @@ app.post('/names', (req, res, next) => {
     res.json(names);
 });
 
-app.use(function(err, req, res, next) {
-  if (err) {
-    res.status(500).send(err);
-  }
-});
+// app.use(function(err, req, res, next) {
+//   if (err) {
+//     res.status(500).send(err);
+//   }
+// });
