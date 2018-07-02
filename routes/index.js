@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const app = express();
 
 // Get Homepage
 router.get('/', ensureAuthenticated, function(req, res){
@@ -15,11 +14,5 @@ function ensureAuthenticated(req, res, next){
 		res.redirect('/users/login');
 	}
 }
-
-app.use(function(err, req, res, next) {
-  if (err) {
-    res.status(500).send(err);
-  }
-});
 
 module.exports = router;

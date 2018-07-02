@@ -1,8 +1,14 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
-import { Jumbotron , Grid, Row, Col, Image, Button } from 'react-bootstrap';
-import {Form, FormGroup, ControlLabel, Checkbox, FormControl } from 'react-bootstrap';
-import './login.css';
+// import { Link } from 'react-router-dom';
+import { 
+  Col, 
+  Button,
+  Form,
+  FormGroup,
+  ControlLabel,
+  Checkbox,
+  FormControl } from 'react-bootstrap';
+// import './login.css';
 
 
 export default class Login extends Component {
@@ -28,14 +34,15 @@ export default class Login extends Component {
   </FormGroup>
 
   <FormGroup>
-    <Col smOffset={4} sm={10}>
+    <Col smOffset={4} sm={8}>
       <Checkbox>Remember me</Checkbox>
     </Col>
   </FormGroup>
 
   <FormGroup>
-    <Col smOffset={4} sm={10}>
-      <Button type="submit">Sign in</Button>
+    <Col smOffset={4} sm={8}>
+      <Button bsStyle="primary" type="button">Sign in</Button> 
+      <Button bsStyle="" type="button" href="/register">Create an account</Button>
     </Col>
   </FormGroup>
 </Form>

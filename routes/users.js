@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require('express');
 const router = express.Router();
 const app = express();
@@ -23,6 +24,14 @@ var updateEventId = function(req, res, next) {
   }
   next();
 };
+=======
+var express = require('express');
+var router = express.Router();
+var passport = require('passport');
+var LocalStrategy = require('passport-local').Strategy;
+
+var User = require('../models/user');
+>>>>>>> master
 
 // Register
 router.get('/register', function (req, res) {
@@ -33,6 +42,7 @@ router.get('/register', function (req, res) {
 router.get('/login', function (req, res) {
 	res.render('login');
 });
+<<<<<<< HEAD
 
 // Register User
 router.post('/register', function (req, res) {
@@ -150,3 +160,5 @@ app.post('/events', updateEventId, function(req, res) {
 });
 
 module.exports = router;
+=======
+>>>>>>> master
