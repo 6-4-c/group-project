@@ -55,7 +55,6 @@ conn.once('open', function() {
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
-
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 // BodyParser Middleware
