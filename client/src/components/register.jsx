@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Jumbotron , Grid, Row, Col, Image, Button } from 'react-bootstrap';
-import {Form, FormGroup, ControlLabel, Checkbox, FormControl } from 'react-bootstrap';
+import { Col, Button } from 'react-bootstrap';
+import {Form, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
 
 export default class Register extends Component {
   render() {
@@ -42,23 +42,8 @@ export default class Register extends Component {
     </Col>
   </FormGroup>
 
-    {/* <FormGroup controlId="formHorizontalPassword">
-    <Col componentClass={ControlLabel} sm={4}>
-      Password
-    </Col>
-    <Col sm={5}>
-      <FormControl type="password" placeholder="Password" />
-    </Col>
-  </FormGroup> */}
-
-  {/* <FormGroup>
-    <Col smOffset={4} sm={10}>
-      <Checkbox>Remember me</Checkbox>
-    </Col>
-  </FormGroup> */}
-
   <FormGroup>
-    <Col smOffset={4} sm={10}>
+    <Col smOffset={4} sm={8}>
       <Button type="submit">Sign up</Button>
     </Col>
   </FormGroup>
