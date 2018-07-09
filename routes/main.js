@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
 // const express = require('express');
 // const router = express.Router();
 // const app = express();
@@ -44,6 +47,8 @@
 //     res.status(500).send(err);
 //   }
 // });
+<<<<<<< HEAD
+=======
 =======
 const express = require('express');
 const router = express.Router();
@@ -83,4 +88,5 @@ app.get('/signup',(req, res, next) => {
 app.post('/names', (req, res, next) => {
     res.json(names);
 });
+>>>>>>> master
 >>>>>>> master

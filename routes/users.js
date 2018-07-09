@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
 >>>>>>> master
 const express = require('express');
 const router = express.Router();
@@ -29,6 +32,8 @@ var updateEventId = function(req, res, next) {
 };
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 =======
 var express = require('express');
 var router = express.Router();
@@ -36,6 +41,7 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 
 var User = require('../models/user');
+>>>>>>> master
 >>>>>>> master
 >>>>>>> master
 
@@ -51,6 +57,9 @@ router.get('/login', function (req, res) {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
 >>>>>>> master
 
 // Register User
@@ -129,12 +138,17 @@ passport.use(new LocalStrategy(
 	}));
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
 passport.serializeUser((user, done) => {
 	done(null, user.id);
 });
 
 passport.deserializeUser((id, done) => {
 	User.getUserById(id, (err, user) => {
+<<<<<<< HEAD
+=======
 =======
 passport.serializeUser(function (user, done) {
 	done(null, user.id);
@@ -142,6 +156,7 @@ passport.serializeUser(function (user, done) {
 
 passport.deserializeUser(function (id, done) {
 	User.getUserById(id, function (err, user) {
+>>>>>>> master
 >>>>>>> master
 		done(err, user);
 	});
@@ -156,7 +171,11 @@ router.post('/login',
 <<<<<<< HEAD
 router.get('/logout', (req, res) => {
 =======
+<<<<<<< HEAD
+router.get('/logout', (req, res) => {
+=======
 router.get('/logout', function (req, res) {
+>>>>>>> master
 >>>>>>> master
 	req.logout();
 
@@ -168,7 +187,11 @@ router.get('/logout', function (req, res) {
 <<<<<<< HEAD
 app.post('/users', updateId, (req, res) => {
 =======
+<<<<<<< HEAD
+app.post('/users', updateId, (req, res) => {
+=======
 app.post('/users', updateId, function(req, res) {
+>>>>>>> master
 >>>>>>> master
   var user = req.body;
 
@@ -180,7 +203,11 @@ app.post('/users', updateId, function(req, res) {
 <<<<<<< HEAD
 app.post('/events', updateEventId, (req, res) => {
 =======
+<<<<<<< HEAD
+app.post('/events', updateEventId, (req, res) => {
+=======
 app.post('/events', updateEventId, function(req, res) {
+>>>>>>> master
 >>>>>>> master
   var event = req.body;
 
@@ -190,6 +217,9 @@ app.post('/events', updateEventId, function(req, res) {
 });
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
 app.get('/users', (req, res) => {
     res.render(users)
 })
@@ -213,8 +243,11 @@ app.use((err, req, res, next) => {
 });
 
 module.exports = router;
+<<<<<<< HEAD
+=======
 =======
 module.exports = router;
 =======
+>>>>>>> master
 >>>>>>> master
 >>>>>>> master
