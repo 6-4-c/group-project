@@ -1,6 +1,13 @@
 const express = require('express');
 const router = express.Router();
+<<<<<<< HEAD
 const app = express();
+=======
+<<<<<<< HEAD
+const app = express();
+=======
+>>>>>>> master
+>>>>>>> master
 
 // Get Homepage
 router.get('/', ensureAuthenticated, function(req, res){
@@ -16,10 +23,19 @@ function ensureAuthenticated(req, res, next){
 	}
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
 app.use(function(err, req, res, next) {
   if (err) {
     res.status(500).send(err);
   }
 });
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> master
+>>>>>>> master
 module.exports = router;
