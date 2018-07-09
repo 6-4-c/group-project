@@ -26,7 +26,11 @@ var options = { server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 
                 replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS : 30000 } } };
 
 // MLAB Connection
+<<<<<<< HEAD
+var mongodbUri = 'mongodb://admin:adminADMIN123@ds251210.mlab.com:51210/eventplanner';
+=======
 // var mongodbUri = 'mongodb://admin:adminADMIN123@ds251210.mlab.com:51210/eventplanner';
+>>>>>>> master
 
 //ALT Connections Strings
 // mongodb://admin:adminAdmin123@ds251210.mlab.com:51210/eventplanner
@@ -41,14 +45,18 @@ var options = { server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 
 // nc -w 3 -v ds251210.mlab.com 51210
 
 // LOCALHOST connection
+<<<<<<< HEAD
+// var mongodbUri = 'mongodb://localhost/users';
+=======
 var mongodbUri = 'mongodb://localhost/users';
+>>>>>>> master
 
 mongoose.connect(mongodbUri, options);
 var conn = mongoose.connection;
 
 conn.on('error', console.error.bind(console, 'connection error:'));
 
-conn.once('open', function() {
+conn.once('open', () => {
   // Wait for the database connection to establish, then start the app.
 });
 
@@ -68,7 +76,11 @@ app.use(passport.session());
 
 // Express Validator
 app.use(expressValidator({
+<<<<<<< HEAD
+  errorFormatter: (param, msg, value) => {
+=======
   errorFormatter: function(param, msg, value) {
+>>>>>>> master
       var namespace = param.split('.')
       , root    = namespace.shift()
       , formParam = root;
@@ -139,6 +151,12 @@ app.use(morgan('dev'));
 //   });
 //   res.render('signupsuccess');
 // });
+
+app.use((err, req, res, next) => {
+  if (err) {
+    res.status(500).send(err);
+  }
+});
 
 // Development mode port
 const port = process.env.PORT || 5000;
