@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
 >>>>>>> master
 // const express = require('express');
 // const router = express.Router();
@@ -49,6 +52,8 @@
 // });
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 =======
 const express = require('express');
 const router = express.Router();
@@ -88,5 +93,6 @@ app.get('/signup',(req, res, next) => {
 app.post('/names', (req, res, next) => {
     res.json(names);
 });
+>>>>>>> master
 >>>>>>> master
 >>>>>>> master

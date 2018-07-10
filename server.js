@@ -32,7 +32,11 @@ var mongodbUri = 'mongodb://admin:adminADMIN123@ds251210.mlab.com:51210/eventpla
 <<<<<<< HEAD
 var mongodbUri = 'mongodb://admin:adminADMIN123@ds251210.mlab.com:51210/eventplanner';
 =======
+<<<<<<< HEAD
+var mongodbUri = 'mongodb://admin:adminADMIN123@ds251210.mlab.com:51210/eventplanner';
+=======
 // var mongodbUri = 'mongodb://admin:adminADMIN123@ds251210.mlab.com:51210/eventplanner';
+>>>>>>> master
 >>>>>>> master
 >>>>>>> master
 
@@ -55,7 +59,11 @@ var mongodbUri = 'mongodb://admin:adminADMIN123@ds251210.mlab.com:51210/eventpla
 <<<<<<< HEAD
 // var mongodbUri = 'mongodb://localhost/users';
 =======
+<<<<<<< HEAD
+// var mongodbUri = 'mongodb://localhost/users';
+=======
 var mongodbUri = 'mongodb://localhost/users';
+>>>>>>> master
 >>>>>>> master
 >>>>>>> master
 
@@ -90,7 +98,11 @@ app.use(expressValidator({
 <<<<<<< HEAD
   errorFormatter: (param, msg, value) => {
 =======
+<<<<<<< HEAD
+  errorFormatter: (param, msg, value) => {
+=======
   errorFormatter: function(param, msg, value) {
+>>>>>>> master
 >>>>>>> master
 >>>>>>> master
       var namespace = param.split('.')

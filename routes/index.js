@@ -6,6 +6,10 @@ const app = express();
 <<<<<<< HEAD
 const app = express();
 =======
+<<<<<<< HEAD
+const app = express();
+=======
+>>>>>>> master
 >>>>>>> master
 >>>>>>> master
 
@@ -26,6 +30,9 @@ function ensureAuthenticated(req, res, next){
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
 >>>>>>> master
 app.use(function(err, req, res, next) {
   if (err) {
@@ -35,7 +42,10 @@ app.use(function(err, req, res, next) {
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
 >>>>>>> master
 >>>>>>> master
 module.exports = router;
