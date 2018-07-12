@@ -79,7 +79,7 @@ conn.once('open', () => {
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
-app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(express.static('client'));
 
 // BodyParser Middleware
 app.use(bodyParser.json())
